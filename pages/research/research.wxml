@@ -1,0 +1,34 @@
+<view class="research">
+  <view class="title-box">
+    <view class="btn-return" bind:tap="return">返回</view>
+    <view class="ipt">
+      <view class="img">
+        <image class="auto-img" src="../../static/big.png" mode="widthFix" />
+      </view>
+      <view class="input">
+        <input class="i" type="text" placeholder="请输入搜素关键词" placeholder-style="font-size: 24rpx;" bindblur="updateValue" bindconfirm="getInputValue" value="{{currentValue}}"/>
+      </view>
+    </view>
+    <view class="r" bind:tap="confirm">搜索</view>
+  </view>
+
+  <view class="history-box">
+    <view class="history">
+      <view class="history-item"  wx:for="{{history}}" wx:key="index">
+        <view class="text" bind:tap="setValue" data-value="{{item}}">{{item}}</view>
+        <view class="imgs" bind:tap="clear" data-value="{{item}}">
+          <image class="auto-img" src="../../static/X.png" mode="widthFix"/>
+        </view>
+      </view>
+    </view>
+    <view class="btn" bind:tap="clearAll">清除所有搜索历史</view>
+  </view>
+
+  <view class="home-product">
+    <view class="product">
+      <view class="pro-item" wx:for="{{shopData}}" wx:key="index" bind:tap="goDetail" data-pid="{{item.pid}}">
+        <product prod="{{item}}"></product>
+      </view>
+    </view>
+  </view>
+</view>

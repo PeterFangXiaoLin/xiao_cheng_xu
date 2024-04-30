@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "搜素",
+  "usingComponents": {
+    "product": "../../components/product/product"
+  }
+}

@@ -1,0 +1,18 @@
+.count {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.img {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.c {
+  margin: 0 10rpx;
+}

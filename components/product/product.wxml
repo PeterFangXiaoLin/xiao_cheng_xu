@@ -1,0 +1,9 @@
+<view>
+  <view class="pro-img">
+    <image class="auto-img" src="{{prod.smallImg}}" mode="widthFix"/>
+    <view class="hot" wx:if="{{prod.isHot === 1}}">热卖</view>
+  </view>
+  <view class="zh-name">{{prod.name}}</view>
+  <view class="en-name one-text">{{prod.enname}}</view>
+  <view class="price">￥{{prod.price}}</view>
+</view>

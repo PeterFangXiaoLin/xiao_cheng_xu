@@ -1,0 +1,57 @@
+<view class="detail">
+  <view>
+    <image class="auto-img" src="{{detailData.large_img}}" mode="widthFix" />
+  </view>
+
+  <view class="detail-box">
+    <view class="name-box">
+      <view class="name">
+        <view class="ch-name">{{detailData.name}}</view>
+        <view class="en-name">{{detailData.enname}}</view>
+      </view>
+      <view class="price">￥{{detailData.price}}</view>
+    </view>
+
+    <view class="rule-box">
+      <view class="rule" wx:for="{{detailData.rult}}" wx:key="index">
+        <view class="rule-title">{{item.title}}</view>
+        <view class="rule-detail">
+          <view class="r {{activeIndex[index] === i ? 'active' : ''}}" wx:for="{{item.rultData}}" wx:for-item="v" wx:for-index="i" wx:key="i" bind:tap="selectType" data-i="{{i}}" data-index="{{index}}">{{v.name}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="count-box">
+      <view class="count-title">商品数量</view>
+      <view class="count">
+        <steper />
+      </view>
+    </view>
+
+    <view class="desc-box">
+      <view class="desc-title">商品描述</view>
+      <view class="desc-text">
+        <view class="desc-item" wx:for="{{detailData.desc}}" wx:key="index">{{index + 1}}. {{item}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="action-bar">
+    <view class="icon-box">
+      <view class="icon">
+        <image class="auto-img" src="../../static/bag.png" mode="widthFix"/>
+      </view>
+      <view class="icon-text">购物袋</view>
+    </view>
+
+    <view class="icon-box">
+      <view class="icon">
+        <image class="auto-img" src="../../static/like.png" mode="widthFix"/>
+      </view>
+      <view class="icon-text">收藏</view>
+    </view>
+
+    <view class="icon-btn">加入购物车</view>
+  </view>
+
+</view>

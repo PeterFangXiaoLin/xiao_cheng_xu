@@ -1,0 +1,40 @@
+/* components/product/product.wxss */
+.pro-img {
+  display: block;
+  position: relative;
+}
+.hot {
+  font-size: 20rpx;
+  color: #e4393e;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4rpx 8rpx;
+}
+.zh-name {
+  color: #444;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.en-name {
+  color: #666;
+  font-size: 24rpx;
+}
+.price {
+  color: #e4393e;
+  font-weight: bold;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.auto-img {
+  width: 100%;
+  display: block;
+}
+
+.one-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,149 @@
+.detail {
+  padding-bottom: 120rpx;
+}
+
+.detail-box {
+  position: relative;
+  top: -40rpx;
+  background-color: #fff;
+  margin: 0 20rpx;
+  padding: 30rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.name-box {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  margin-left: auto;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #e4393c;
+}
+.ch-name {
+  color: #444;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+.en-name {
+  color: #666;
+  font-size: 24rpx;
+}
+
+.rule-box {
+  margin-top: 20rpx;
+}
+
+.rule {
+  display: flex;
+  margin-bottom: 10rpx;
+}
+
+.rule-title {
+  width: 120rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  color: #444;
+  font-size: 28rpx;
+}
+
+.rule-detail {
+  display: flex;
+  font-size: 28rpx;
+}
+
+.r {
+  background-color: #e8e8e8e8;
+  width: 140rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  margin-right: 20rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.r :last-child {
+  margin-right: 0;
+}
+
+.r.active {
+  background-color: #0C34BA;
+  color: #fff;
+}
+
+.count-box {
+  margin-top: 80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.count-title {
+  position: relative;
+  font-size: 28rpx;
+  color: #444;
+}
+.count {
+  margin-left: auto;
+}
+
+.desc-box {
+  margin-top: 40rpx;
+}
+
+.desc-title {
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  color: #444;
+}
+.desc-text {
+  font-size: 24rpx;
+  color: #666;
+}
+.desc-item {
+  margin-bottom: 6rpx;
+}
+.desc-item :last-child {
+  margin-bottom: 0;
+}
+
+.action-bar {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20rpx;
+  height: 80rpx;
+  align-items: center;
+}
+
+.icon-box {
+  margin-right: 20rpx;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 auto;
+}
+
+.icon-text {
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 4rpx;
+  color: #707070;
+}
+
+.icon-btn {
+  flex-grow: 1;
+  height: 80rpx;
+  font-size: 28rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  background-color: #0C34BA;
+}

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/menu/menu",
+    "pages/shopbag/shopbag",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/research/research"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "女仆咖啡",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/home.png",
+        "selectedIconPath": "static/home_active.png"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "菜单",
+        "iconPath": "static/menu.png",
+        "selectedIconPath": "static/menu_active.png"
+      },
+      {
+        "pagePath": "pages/shopbag/shopbag",
+        "text": "购物袋",
+        "iconPath": "/static/shopbag.png",
+        "selectedIconPath": "/static/shopbag_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/static/my.png",
+        "selectedIconPath": "/static/my_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

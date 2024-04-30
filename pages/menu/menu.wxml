@@ -1,0 +1,25 @@
+<view class="menu">
+
+  <view class="search-box">
+    <view class="search">
+    <view class="img">
+      <image class="auto-img" src="../../static/放大镜.png" mode="widthFix"/>
+    </view>
+      <input class="input" type="text" placeholder="请输入搜素关键字" placeholder-style="font-size: 28rpx;" bindconfirm="goResearch"/>
+    </view>
+  </view>
+
+  <view class="menu-box">
+    <view class="aside-menu">
+      <view class="menu-item {{activeIndex === index ? 'active' : ''}}" wx:for="{{typeData}}" wx:key="index" bind:tap="selectType" data-i="{{index}}">{{item.typeDesc}}</view>
+    </view>
+
+    <view class="menu-product">
+      <view class="product">
+        <view class="pro-item" wx:for="{{shopData}}" wx:key="index" bind:tap="goDetail" data-pid="{{item.pid}}">
+          <product prod="{{item}}"></product>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

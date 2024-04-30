@@ -1,0 +1,86 @@
+/* pages/login/login.wxss */.register {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.logo {
+  margin: 120rpx auto 120rpx;
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.input-box {
+  margin: 30rpx 20rpx;
+}
+
+.input-box :last-child {
+  margin-bottom: 0;
+}
+
+.item-box {
+  display: flex;
+  height: 80rpx;
+  background-color: lightgray;
+  border-radius: 20rpx;
+}
+
+.item-title {
+  width: 120rpx;
+  padding: 20rpx;
+  align-items: center;
+}
+
+.item-text {
+  flex-grow: 1;
+  padding: 20rpx;
+  align-items: center;
+}
+
+.pwd {
+  display: flex;
+  align-items: center;
+}
+
+.pwd-box {
+  width: calc(100% - 40rpx);
+}
+
+.eye {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+
+.btn {
+  background-color: #0C34BA;
+  height: 80rpx;
+  margin: 0 20rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+}
+
+.tip {
+  margin-top: 60rpx;
+  display: flex;
+}
+.t {
+  margin-left: auto;
+  padding-right: 20rpx;
+}
+
+.msg {
+  font-size: 24rpx;
+  padding: 20rpx;
+  margin-top: 60rpx;
+}
+.view-item {
+  margin-bottom: 6rpx;
+}
+.view-item:last-child {
+  margin-bottom: 0;
+}

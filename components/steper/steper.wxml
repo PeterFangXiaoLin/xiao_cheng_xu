@@ -1,0 +1,9 @@
+<view class="count">
+  <view class="btn" data-count="-1" bind:tap="updateCount">
+    <image class="img" src="../../static/-.png" mode="widthFix"/>
+  </view>
+  <view class="c">{{count}}</view>
+  <view class="btn" data-count="1" bind:tap="updateCount">
+    <image class="img" src="../../static/+.png" mode="widthFix"/>
+  </view>
+</view>

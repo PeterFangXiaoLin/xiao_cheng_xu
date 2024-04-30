@@ -1,0 +1,70 @@
+.menu {
+  background-color: #F2F3F3;
+}
+
+.search-box {
+  height: 60rpx;
+  padding: 20rpx;
+}
+.search {
+  height: 60rpx;
+  background-color: white;
+  padding: 0 10rpx;
+  border-radius: 30rpx;
+  display: flex;
+}
+.img {
+  width: 60rpx;
+  height: 60rpx;
+}
+.input {
+  height: 60rpx;
+  margin-left: 10rpx;
+}
+
+.menu-box {
+  margin-top: 10rpx;
+  display: flex;
+  position: fixed;
+  top: 100rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.aside-menu {
+  width: 180rpx;
+  overflow-y: auto;
+}
+
+.menu-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.menu-item.active {
+  color: rgb(224, 105, 36);
+}
+
+.menu-product {
+  width: calc(100% - 180rpx);
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20rpx;
+}
+
+.pro-item {
+  width: calc(50% - 20rpx + 20rpx / 2);
+  margin-bottom: 20rpx;
+  margin-right: 20rpx;
+}
+
+.pro-item:nth-child(2n) {
+  margin-right: 0;
+}

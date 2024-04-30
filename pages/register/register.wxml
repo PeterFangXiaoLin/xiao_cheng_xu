@@ -1,0 +1,51 @@
+<view class="register">
+  <view class="logo">
+    <image class="auto-img" src="../../static/home_active.png" mode="widthFix" />
+  </view>
+
+  <view class="input-box">
+    <view class="item-box">
+      <view class="item-title" >手机号</view>
+      <view class="item-text">
+        <input type="text" placeholder="输入手机号"  data-key="phone" value="{{userInfo.phone}}" bind:change="updateUserInfo"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="input-box">
+    <view class="item-box">
+      <view class="item-title">密码</view>
+      <view class="item-text pwd">
+        <view class="pwd-box">
+          <input type="text" placeholder="输入密码" password="{{!isOpen}}" data-key="password" value="{{userInfo.password}}" bind:change="updateUserInfo" />
+        </view>
+        <view class="eye">
+          <image class="auto-img" src="{{isOpen ? '../../static/eye_2.png' : '../../static/eye_1.png'}}" mode="widthFix" bind:tap="updateIsOpen"/>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="input-box">
+    <view class="item-box">
+      <view class="item-title">昵称</view>
+      <view class="item-text">
+        <input type="text" placeholder="输入昵称" data-key="nickName" value="{{userInfo.nickName}}" bind:change="updateUserInfo" />
+      </view>
+    </view>
+  </view>
+
+  <view class="btn" bind:tap="register">注册
+  </view>
+
+  <view class="tip" bind:tap="goLogin">
+    <view class="t">已有账号，登录</view>
+  </view>
+
+  <view class="msg">
+    <view class="msg-view">提示</view>
+    <view class="msg-view">1.手机号11位</view>
+    <view class="msg-view">2.密码支持字母数字下划线组合，且必须以字母开头，6-16位</view>
+    <view class="msg-view">3.昵称支持中英文组合, 1-10位</view>
+  </view>
+</view>

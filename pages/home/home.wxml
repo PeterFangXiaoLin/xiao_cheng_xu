@@ -1,0 +1,30 @@
+<view class="home">
+  <view class="title-box">
+    <view class="hello">{{time}}</view>
+    <view class="login" bind:tap="goLogin">{{nickName}}</view>
+    <view class="ipt">
+      <view class="img">
+        <image class="auto-img" src="../../static/big.png" mode="widthFix" />
+      </view>
+      <view class="research">
+        <input class="i" type="text" placeholder="请输入搜素关键词" placeholder-style="font-size: 24rpx;" bindconfirm="goReacher"/>
+      </view>
+    </view>
+  </view>
+
+  <view class="banner">
+    <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay interval="4000">
+      <swiper-item wx:for="{{list}}" wx:key="index">
+        <image class="auto-img" src="{{item.bannerImg}}" mode="widthFix" wx:key="index" bind:tap="goDetail" data-pid="{{item.pid}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="home-product">
+    <view class="product">
+      <view class="pro-item" wx:for="{{shopData}}" wx:key="index" bind:tap="goDetail" data-pid="{{item.pid}}">
+        <product prod="{{item}}"></product>
+      </view>
+    </view>
+  </view>
+</view>
